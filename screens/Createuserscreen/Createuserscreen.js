@@ -42,11 +42,9 @@ function Createuserscreen(props) {
 
     return (
         <View style={styles.container}>
+             <Image style={styles.superior} source={require('../../assets/cabeza.png')}/>
             <View style={styles.inputcontainer}>
-                <View style={styles.titlecontainer}>
-                    <Text style={styles.title}>Crea tu cuenta</Text>
-                    <Text style={styles.subtitle}>¡Es muy fácil!</Text>
-                </View>
+        
                 <TextInput style={styles.inputs} 
                     placeholder="Nombre"
                     onChangeText={(value) => handleChangeText('name', value)}
@@ -74,7 +72,7 @@ function Createuserscreen(props) {
                 onPress={() => saveNewUser()}
                 //onPress={() => props.navigation.navigate('Createbikescreen')}
             >
-                <Text style={styles.textbutton}>Registrarte</Text>
+                <Text style={styles.textbutton}>Continuar</Text>
             </TouchableOpacity>
             <Text style={styles.accept}>Al momento de registrarte, aceptas los términos y condiciones de uso de la aplicación</Text>
             <TouchableOpacity style={styles.gotit} onPress={() => props.navigation.navigate('Loginscreen')}>

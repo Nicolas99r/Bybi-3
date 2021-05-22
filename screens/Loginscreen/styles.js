@@ -33,31 +33,36 @@ const styles = StyleSheet.create({
         height: 30,
         margin: 12,
         borderBottomWidth: 1,
-        borderBottomColor: "#B8D9DE",
-        
+        borderBottomColor: "#2CDCCC",
+       
     },
+
     button: {
-        backgroundColor: "lightblue",
+        backgroundColor: "#3FA9F5",
         marginTop: "5%",
-        height: 40,
-        width: "50%",
+        height: 55,
+        width: "40%",
         borderRadius: 20,
         justifyContent: "center",
-        borderWidth: 5,
-        borderColor: "#D0E9FA",
+        borderWidth: 2,
+        borderColor: "#4DFFCC",
         
     },
     textbutton: {
         textAlign: "center",
         fontSize: 20,
-        fontWeight: 'bold',
-        color: "#333D39"
+        color: "#FFFFFF",
     },
     gotit: {
-        marginTop: "5%",
+        marginTop: "7%",
+    },
+
+    gotit2: {
+        marginTop: "1.5%",
     },
     already: {
-        textDecorationLine: "underline"
+        textDecorationLine: "none",
+        color: "#A6A6A6",
     },
     inferior: {
         width: "100%",
