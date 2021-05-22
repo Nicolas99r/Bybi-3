@@ -9,54 +9,53 @@ const styles = StyleSheet.create({
       alignItems: "center",
     },
     inputcontainer: {
-        marginTop: "20%",
+        marginTop: "5%",
         width: "80%",
-    },
-    titlecontainer: {
-        height: "20%",
-        alignItems: "center",
-        borderBottomWidth: 1,
-        borderBottomColor: "black",
         
     },
-    title: {
-        fontSize: 30,
-        fontWeight: "bold",
-    },
+
+    superior: {
+        width: "100%",
+        height: "23vh",
+ },
+  
+  
     inputs: {
         height: 30,
         margin: 12,
         borderBottomWidth: 1,
-        borderBottomColor: "#B8D9DE",
+        borderBottomColor: "#2CDCCC",
+        marginTop: "0.4%",
         
     },
     button: {
-        backgroundColor: "lightblue",
+        backgroundColor: "#3FA9F5",
         marginTop: "5%",
-        height: 40,
-        width: "50%",
+        height: 55,
+        width: "40%",
         borderRadius: 20,
         justifyContent: "center",
-        borderWidth: 5,
-        borderColor: "#D0E9FA",
+        borderWidth: 2,
+        borderColor: "#4DFFCC",
         
     },
     textbutton: {
         textAlign: "center",
         fontSize: 20,
-        fontWeight: 'bold',
-        color: "#333D39"
+        color: "#FFFFFF", 
     },
     accept: {
-        width:"70%",
+        width:"80%",
         textAlign: 'center',
-        marginTop: 10
+        marginTop: 10,
+        color: "#A6A6A6",
     },
     gotit: {
-        marginTop: "5%",
+        marginTop: "1.5%",
     },
     already: {
-        textDecorationLine: "underline"
+        textDecorationLine: "none",
+        color: "#A6A6A6", 
     },
     inferior: {
         width: "100%",
