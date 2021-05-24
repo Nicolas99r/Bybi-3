@@ -40,7 +40,7 @@ function Createbikescreen(props) {
       var user = firebase.auth().currentUser;
 
       if (user) {
-        alert("Logeado");
+        alert("Logeado, con UDI:" + user.uid);
       } else {
         alert("Logeadon't");
       }
