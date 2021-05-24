@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
         borderBottomWidth: 1,
         borderBottomColor: "black",
-        
+       //hola 
     },
     title: {
         fontSize: 30,
