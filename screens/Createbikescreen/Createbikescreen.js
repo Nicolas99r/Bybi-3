@@ -29,21 +29,21 @@ function Createbikescreen(props) {
     if ((state.name || state.model || state.color || state.accesories) === "") {
       alert("Asegurate de llenar todos los campos 🙄");
     } else {
-      await firebase.firestore().collection("Bicicleta").add({
-        name: state.name,
-        model: state.model,
-        color: state.color,
-        accesories: state.accesories,
-      });
-      //console.log("Estamos melos")
-      //console.log(firestore.firebase.collection('Bicicleta').value)
-      var user = firebase.auth().currentUser;
-
-      if (user) {
-        alert("Logeado, con UDI:" + user.uid);
-      } else {
-        alert("Logeadon't");
-      }
+      await firebase
+        .firestore()
+        .collection("Bicicleta")
+        .add({
+          name: state.name,
+          model: state.model,
+          color: state.color,
+          accesories: state.accesories,
+        })
+        .then(function (bike) {
+          alert("Logueado con el ID: " + bike.id);
+        })
+        .catch(function (error) {
+          alert("Logueadon´t");
+        });
     }
   };
 
