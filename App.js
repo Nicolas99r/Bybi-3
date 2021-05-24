@@ -7,18 +7,17 @@ import Createuserscreen from "./screens/Createuserscreen/Createuserscreen";
 import Createbikescreen from "./screens/Createbikescreen/Createbikescreen";
 import Loginscreen from "./screens/Loginscreen/Loginscreen";
 import LoginInst from "./screens/LoginInst/LoginInst";
-import EleccionUser from './screens/EleccionUser/EleccionUser';
+//import EleccionUser from './screens/EleccionUser/EleccionUser';
 const Stack = createStackNavigator();
 
 //Funcion que almacena las pantallas
 function MyStack() {
   return (
     <Stack.Navigator>
-        <Stack.Screen name="EleccionUser" component={EleccionUser} />
-      <Stack.Screen name="Loginscreen" component={Loginscreen} />
-      <Stack.Screen name="LoginInst" component={LoginInst} />
-      <Stack.Screen name="Createuserscreen" component={Createuserscreen} />
-      <Stack.Screen name="Createbikescreen" component={Createbikescreen} />
+      <Stack.Screen name="Ingresar Usuario" component={Loginscreen} />
+      <Stack.Screen name="Ingresar Institucional" component={LoginInst} />
+      <Stack.Screen name="Registrar Usuario" component={Createuserscreen} />
+      <Stack.Screen name="Registrar Bicicleta" component={Createbikescreen} />
     </Stack.Navigator>
   );
 }
