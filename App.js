@@ -3,6 +3,7 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 //Importar pantallas
+import EleccionEntrada from "./screens/EleccionEntrada/EleccionEntrada";
 import Createuserscreen from "./screens/Createuserscreen/Createuserscreen";
 import Createbikescreen from "./screens/Createbikescreen/Createbikescreen";
 import Loginscreen from "./screens/Loginscreen/Loginscreen";
@@ -14,6 +15,7 @@ const Stack = createStackNavigator();
 function MyStack() {
   return (
     <Stack.Navigator>
+     <Stack.Screen name="EleccionEntrada" component={EleccionEntrada} /> 
         <Stack.Screen name="EleccionUser" component={EleccionUser} />
       <Stack.Screen name="Loginscreen" component={Loginscreen} />
       <Stack.Screen name="LoginInst" component={LoginInst} />
