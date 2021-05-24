@@ -8,16 +8,14 @@ const styles = StyleSheet.create({
     },
     inputcontainer: {
         width: "80%",
+        marginTop: "5%",
     },
     superior: {
         width: "100%",
-        height: "30vh",
+        height: "23vh",
 
     },
-    imagencita: {
-        height: "15vh",
-        width: "40vh"
-    },
+  
     titlecontainer: {
         height: "10vh",
         alignItems: "center",
