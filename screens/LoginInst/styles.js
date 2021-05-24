@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native'
+import { vw, vh, vmin, vmax } from 'react-native-expo-viewport-units';
 
 const styles = StyleSheet.create({
     container: {
@@ -12,12 +13,12 @@ const styles = StyleSheet.create({
     },
     superior: {
         width: "100%",
-        height: "23vh",
+        height: vh(23),
 
     },
   
     titlecontainer: {
-        height: "10vh",
+        height: vh(10),
         alignItems: "center",
         borderBottomWidth: 1,
         borderBottomColor: "black",
@@ -64,7 +65,7 @@ const styles = StyleSheet.create({
     },
     inferior: {
         width: "100%",
-        height: "17vh",
+        height: vh(17),
         justifyContent: "flex-end",
     }
 })

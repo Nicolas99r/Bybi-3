@@ -9,6 +9,8 @@ import Createbikescreen from "./screens/Createbikescreen/Createbikescreen";
 import Loginscreen from "./screens/Loginscreen/Loginscreen";
 import LoginInst from "./screens/LoginInst/LoginInst";
 import EleccionUser from './screens/EleccionUser/EleccionUser';
+import { vw, vh, vmin, vmax } from 'react-native-expo-viewport-units';
+
 const Stack = createStackNavigator();
 
 //Funcion que almacena las pantallas

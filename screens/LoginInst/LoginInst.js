@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { View, Text, TextInput,Image, TouchableHighlight, TouchableOpacity, TouchableNativeFeedback } from 'react-native';
+import { View, Text, TextInput,Image, TouchableHighlight, TouchableOpacity, TouchableNativeFeedback, KeyboardAvoidingView } from 'react-native';
 import styles from './styles'
 
 function LoginInst(props) {
@@ -12,7 +12,7 @@ function LoginInst(props) {
     }
 
     return (
-        <View style={styles.container}>
+        <KeyboardAvoidingView style={styles.container}>
             <Image style={styles.superior} source={require('../../assets/cabeza.png')}/>
             
             <View style={styles.inputcontainer}>
@@ -40,7 +40,7 @@ function LoginInst(props) {
             </TouchableOpacity>
          
             <Image style={styles.inferior} source={require('../../assets/BannerInferior.png')}/>
-        </View>
+        </KeyboardAvoidingView>
     );
 }
 
