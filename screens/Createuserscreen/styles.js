@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native'
-
+import { vw, vh, vmin, vmax } from 'react-native-expo-viewport-units';
 //Toca cambiar los porcentajes por "vh" porque pone rara por momentos la ubicación de los elementos
 
 const styles = StyleSheet.create({
@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
 
     superior: {
         width: "100%",
-        height: "23vh",
+        height: vh(23),
  },
   
   
@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
     },
     inferior: {
         width: "100%",
-        height: "17vh",
+        height: vh(17),
         justifyContent: "flex-end",
     }
 })
