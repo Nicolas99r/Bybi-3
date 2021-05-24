@@ -14,14 +14,9 @@ var firebaseConfig = {
 };
 
 firebase.initializeApp(firebaseConfig);
-//firebase.analytics();
 
-/*const db = firebase.firestore()
-  export default {
-      firebase,
-      db
-  }*/
 
+// Crear usuario
 function writeUserData(user) {
   firebase
     .database()
@@ -31,7 +26,6 @@ function writeUserData(user) {
       console.log(error.message);
     });
 }
-
 firebase.createUser = async (
   setNombre,
   setCorreoInstitucional,
@@ -52,7 +46,10 @@ firebase.createUser = async (
       writeUserData(user);
     });
 };
+// ----------------------------------------------
 
+
+// Crear bicicleta
 function writeBikeData(bike) {
     firebase
       .database()
@@ -61,8 +58,7 @@ function writeBikeData(bike) {
       .catch((error) => {
         console.log(error.message);
       });
-  }
-  
+  }  
   firebase.createBike = async (
     setNombre,
     setColor,
@@ -82,6 +78,6 @@ function writeBikeData(bike) {
         writeUserData(user);
       });
   };
-
+// ----------------------------------------------
 
 export default firebase;
