@@ -28,16 +28,17 @@ function LoginInst(props) {
                 onChange={(e) => setPass(e.nativeEvent.text)}
                 />
             </View>
-            <TouchableOpacity style={styles.button}>
+            <TouchableOpacity style={styles.button} onPress={() => props.navigation.navigate('Createbikescreen')} >
                 <Text style={styles.textbutton}>Iniciar Sesión</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.gotit}>
                 <Text style={styles.already}>¿Olvidaste tu contraseña?</Text>
             </TouchableOpacity>
-
+            
             <TouchableOpacity style={styles.gotit2} onPress={() => props.navigation.navigate('Createuserscreen')}>
                 <Text style={styles.already}>¿Aún no tienes una cuenta?</Text>
             </TouchableOpacity>
+         
             <Image style={styles.inferior} source={require('../../assets/BannerInferior.png')}/>
         </View>
     );

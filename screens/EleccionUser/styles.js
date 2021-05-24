@@ -6,12 +6,16 @@ const styles = StyleSheet.create({
       backgroundColor: '#fff',
       alignItems: "center",
     },
-    inputcontainer: {
+
+    buttoncontainer: {
         width: "80%",
+        marginTop: "5%",
+        alignItems: "center",
+
     },
     superior: {
         width: "100%",
-        height: "30vh",
+        height: "23vh",
 
     },
     imagencita: {
@@ -39,34 +43,49 @@ const styles = StyleSheet.create({
 
     button: {
         backgroundColor: "#3FA9F5",
-        marginTop: "5%",
+        marginTop: "15%",
         height: 55,
-        width: "40%",
+        width: "50%",
         borderRadius: 20,
         justifyContent: "center",
         borderWidth: 2,
         borderColor: "#4DFFCC",
         
     },
+
+    button2: {
+        backgroundColor: "#3FA9F5",
+        marginTop: "15%",
+        height: 55,
+        width: "50%",
+        borderRadius: 20,
+        justifyContent: "center",
+        borderWidth: 2,
+        borderColor: "#4DFFCC",
+        
+    },
+
+
+
     textbutton: {
         textAlign: "center",
         fontSize: 20,
         color: "#FFFFFF",
     },
-    gotit: {
-        marginTop: "7%",
-    },
-
-    gotit2: {
-        marginTop: "1.5%",
-    },
+    
+   
     already: {
+        marginTop: "8%",
         textDecorationLine: "none",
         color: "#A6A6A6",
+        fontSize: 20,
+        
+
     },
     inferior: {
         width: "100%",
         height: "17vh",
+        marginTop: "10%",
         justifyContent: "flex-end",
     }
 })
