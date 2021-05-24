@@ -41,6 +41,7 @@ firebase.createUser = async (
         codigoInstitucional: setCodigoInstitucional,
         correoInstitucional: setCorreoInstitucional,
         uid: data.user.uid,
+        bike: "empty"
       };
       console.log(data.user.uid);
       writeUserData(user);

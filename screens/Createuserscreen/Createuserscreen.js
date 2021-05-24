@@ -26,15 +26,12 @@ function Createuserscreen(props) {
       alert("Las contraseñas no coinciden 🤨");
     } else {
       try {
-        console.log("Nombre: " + nombre);
-        console.log("Correo: " + correoInstitucional);
         await firebase.createUser(
           nombre,
           correoInstitucional,
           codigoInstitucional,
           password
         );
-
         props.navigation.navigate("Createbikescreen");
       } catch (error) {
         alert(error);

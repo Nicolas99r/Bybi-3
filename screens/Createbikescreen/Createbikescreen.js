@@ -39,7 +39,16 @@ function Createbikescreen(props) {
           accesories: state.accesories,
         })
         .then(function (bike) {
-          alert("Logueado con el ID: " + bike.id);
+          console.log("Bike id: " + bike.id);
+          var user = firebase.auth().currentUser;
+          console.log("El UID de usuario es: " + user.uid);
+          if (user) {
+            console.log("El usuario está loggeado");
+            firebase.database().ref("users/" + user.uid).set({
+              ... state,
+                bike: bike.id,
+            });
+          }
         })
         .catch(function (error) {
           alert("Logueadon´t");
