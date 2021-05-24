@@ -50,34 +50,7 @@ firebase.createUser = async (
 
 
 // Crear bicicleta
-function writeBikeData(bike) {
-    firebase
-      .database()
-      .ref("bikes/" + bike.uid)
-      .set(bike)
-      .catch((error) => {
-        console.log(error.message);
-      });
-  }  
-  firebase.createBike = async (
-    setNombre,
-    setColor,
-    setModelo
-  ) => {
-    await firebase
-      .auth()
-      .createUserWithEmailAndPassword(setCorreoInstitucional, setPassword)
-      .then(function (data) {
-        const user = {
-          nombre: setNombre,
-          codigoInstitucional: setCodigoInstitucional,
-          correoInstitucional: setCorreoInstitucional,
-          uid: data.user.uid,
-        };
-        console.log(data.user.uid);
-        writeUserData(user);
-      });
-  };
+
 // ----------------------------------------------
 
 export default firebase;
