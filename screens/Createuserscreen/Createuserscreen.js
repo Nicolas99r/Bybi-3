@@ -1,86 +1,110 @@
-import React, { useState} from 'react';
-import { View, Text, TextInput, Image, TouchableHighlight, TouchableOpacity } from 'react-native';
-import styles from './styles'
-import firebase from '../../database/firebase'
+import React, { useState } from "react";
+import { View, Text, TextInput, Image, TouchableOpacity } from "react-native";
+import styles from "./styles";
+import firebase from "../../database/firebase";
 
 //Nota: no usé el TouchableHighlight porque se ve muy oscuro, por eso puse el opacity
 
 function Createuserscreen(props) {
+  const [nombre, setNombre] = useState("");
+  const [correoInstitucional, setCorreoInstitucional] = useState("");
+  const [codigoInstitucional, setCodigoInstitucional] = useState("");
+  const [password, setPassword] = useState("");
+  const [confPassword, setConfPassword] = useState("");
 
-    const [state, setState] = useState({
-        name: '',
-        code: '',
-        email: '',
-        password: '',
-        confpass: ''
-    })
+  //No se como hacer que verifique todos los espacios de una manera corta así que despues busco
+  const createUser = async () => {
+    if (
+      (nombre ||
+        correoInstitucional ||
+        codigoInstitucional ||
+        password ||
+        confPassword) === ""
+    ) {
+      alert("Asegurate de llenar todos los campos 🙄");
+    } else if (password !== confPassword) {
+      alert("Las contraseñas no coinciden 🤨");
+    } else {
+      try {
+        console.log("Nombre: " + nombre);
+        console.log("Correo: " + correoInstitucional);
+        await firebase.createUser(
+          nombre,
+          correoInstitucional,
+          codigoInstitucional,
+          password
+        );
 
-    const handleChangeText = (name, value) => {
-        setState({
-            ...state,
-            [name]: value
-        })
+        props.navigation.navigate("Createbikescreen");
+      } catch (error) {
+        alert(error);
+      }
     }
-    //No se como hacer que verifique todos los espacios de una manera corta así que despues busco
-    const saveNewUser = async() => {
-        if ((state.name || state.code || state.email || state.password || state.confpass) === '') {
-            alert('Asegurate de llenar todos los campos 🙄')    
-        } else if (state.password !== state.confpass) {
-            alert('Las contraseñas no coinciden 🤨')
-        } 
-        else {
-            await firebase.db.collection('Usuario').add({
-                name: state.name,
-                code: state.code,
-                email: state.email,
-                password: state.password,
-                confpass: state.confpass
-            })
-            props.navigation.navigate('Createbikescreen')
-        }
-    }
+  };
 
-    return (
-        <View style={styles.container}>
-             <Image style={styles.superior} source={require('../../assets/cabeza.png')}/>
-            <View style={styles.inputcontainer}>
-        
-                <TextInput style={styles.inputs} 
-                    placeholder="Nombre"
-                    onChangeText={(value) => handleChangeText('name', value)}
-                />
-                <TextInput style={styles.inputs} 
-                    placeholder="Código institucional"
-                    onChangeText={(value) => handleChangeText('code', value)}
-                />
-                <TextInput style={styles.inputs} 
-                    placeholder="Correo institucional"
-                    onChangeText={(value) => handleChangeText('email', value)}
-                />
-                <TextInput style={styles.inputs} 
-                    placeholder="Contraseña"
-                    secureTextEntry={true}
-                    onChangeText={(value) => handleChangeText('password', value)}
-                />
-                <TextInput style={styles.inputs} 
-                    placeholder="Confirmar contraseña"
-                    secureTextEntry={true}
-                    onChangeText={(value) => handleChangeText('confpass', value)}
-                />
-            </View>
-            <TouchableOpacity style={styles.button} 
-                onPress={() => saveNewUser()}
-                //onPress={() => props.navigation.navigate('Createbikescreen')}
-            >
-                <Text style={styles.textbutton}>Continuar</Text>
-            </TouchableOpacity>
-            <Text style={styles.accept}>Al momento de registrarte, aceptas los términos y condiciones de uso de la aplicación</Text>
-            <TouchableOpacity style={styles.gotit} onPress={() => props.navigation.navigate('Loginscreen')}>
-                <Text style={styles.already}>¿Ya tienes una cuenta?</Text>
-            </TouchableOpacity>
-            <Image style={styles.inferior} source={require('../../assets/BannerInferior.png')}/>
-        </View>
-    );
+  return (
+    <View style={styles.container}>
+      <Image
+        style={styles.superior}
+        source={require("../../assets/cabeza.png")}
+      />
+      <View style={styles.inputcontainer}>
+        <TextInput
+          style={styles.inputs}
+          placeholder="Nombre"
+          value={nombre}
+          onChangeText={setNombre}
+        />
+        <TextInput
+          style={styles.inputs}
+          placeholder="Código institucional"
+          value={codigoInstitucional}
+          onChangeText={setCodigoInstitucional}
+        />
+        <TextInput
+          style={styles.inputs}
+          placeholder="Correo institucional"
+          value={correoInstitucional}
+          onChangeText={setCorreoInstitucional}
+        />
+        <TextInput
+          style={styles.inputs}
+          placeholder="Contraseña"
+          secureTextEntry={true}
+          value={password}
+          onChangeText={setPassword}
+        />
+        <TextInput
+          style={styles.inputs}
+          placeholder="Confirmar contraseña"
+          secureTextEntry={true}
+          value={confPassword}
+          onChangeText={setConfPassword}
+        />
+      </View>
+      <TouchableOpacity
+        style={styles.button}
+        onPress={createUser}
+        //onPress={() => props.navigation.navigate('Createbikescreen')}
+      >
+        <Text style={styles.textbutton}>Continuar</Text>
+      </TouchableOpacity>
+      <Text style={styles.accept}>
+        Al momento de registrarte, aceptas los términos y condiciones de uso de
+        la aplicación
+      </Text>
+      <TouchableOpacity
+        style={styles.gotit}
+        onPress={() => props.navigation.navigate("Loginscreen")}
+      >
+        <Text style={styles.already}>¿Ya tienes una cuenta?</Text>
+      </TouchableOpacity>
+      <Image
+        style={styles.inferior}
+        source={require("../../assets/BannerInferior.png")}
+      />
+    </View>
+  );
 }
 
 export default Createuserscreen;
