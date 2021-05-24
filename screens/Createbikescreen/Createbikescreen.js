@@ -11,6 +11,7 @@ import styles from "./styles";
 import firebase from "../../database/firebase";
 
 function Createbikescreen(props) {
+  // COSAS DE BACK
   const [state, setState] = useState({
     name: "",
     model: "",
@@ -29,32 +30,18 @@ function Createbikescreen(props) {
     if ((state.name || state.model || state.color || state.accesories) === "") {
       alert("Asegurate de llenar todos los campos 🙄");
     } else {
-      await firebase
-        .firestore()
-        .collection("Bicicleta")
-        .add({
-          name: state.name,
-          model: state.model,
-          color: state.color,
-          accesories: state.accesories,
-        })
-        .then(function (bike) {
-          console.log("Bike id: " + bike.id);
-          var user = firebase.auth().currentUser;
-          console.log("El UID de usuario es: " + user.uid);
-          if (user) {
-            console.log("El usuario está loggeado");
-            firebase.database().ref("users/" + user.uid).set({
-              ... state,
-                bike: bike.id,
-            });
-          }
-        })
-        .catch(function (error) {
-          alert("Logueadon´t");
-        });
+      try {
+        await firebase.saveNewBike(
+          state.name,
+          state.model,
+          state.color,
+          state.accesories
+        );
+      } catch (error) {}
     }
   };
+
+  // COSAS DE BACK
 
   return (
     <View style={styles.container}>

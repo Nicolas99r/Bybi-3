@@ -49,8 +49,37 @@ firebase.createUser = async (
 };
 // ----------------------------------------------
 
-
 // Crear bicicleta
+firebase.saveNewBike = async (setNombre, setModelo, setColor, setAccesorios) => {
+  if ((setNombre || setModelo || setColor || setAccesorios) === "") {
+    alert("Asegurate de llenar todos los campos 🙄");
+  } else {
+    await firebase
+      .firestore()
+      .collection("Bicicleta")
+      .add({
+        name: setNombre,
+        model: setModelo,
+        color: setColor,
+        accesories: setAccesorios,
+      })
+      .then(function (bike) {
+        console.log("Bike id: " + bike.id);
+        var user = firebase.auth().currentUser;
+        console.log("El UID de usuario es: " + user.uid);
+        if (user) {
+          console.log("El usuario está loggeado");
+          firebase.database().ref("users/" + user.uid).set({
+            ... state,
+              bike: bike.id,
+          });
+        }
+      })
+      .catch(function (error) {
+        alert("Logueadon´t");
+      });
+  }
+};
 
 // ----------------------------------------------
 

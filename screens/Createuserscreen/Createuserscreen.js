@@ -12,7 +12,7 @@ function Createuserscreen(props) {
   const [password, setPassword] = useState("");
   const [confPassword, setConfPassword] = useState("");
 
-  //No se como hacer que verifique todos los espacios de una manera corta así que despues busco
+  // COSAS DE BACK
   const createUser = async () => {
     if (
       (nombre ||
@@ -38,6 +38,7 @@ function Createuserscreen(props) {
       }
     }
   };
+  // COSAS DE BACK
 
   return (
     <View style={styles.container}>
