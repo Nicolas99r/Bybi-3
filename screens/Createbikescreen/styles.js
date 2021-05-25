@@ -1,27 +1,25 @@
 import {StyleSheet} from 'react-native'
 import { vw, vh, vminnpm , vmax } from 'react-native-expo-viewport-units';
 const styles = StyleSheet.create({
+
     container: {
       flex: 1,
       backgroundColor: '#fff',
       alignItems: "center",
-      
+      height: vh(100),
     },
     inputcontainer: {
         marginTop: "20%",
         width: "80%",
     },
-    titlecontainer: {
-        height: "20%",
-        alignItems: "center",
-        borderBottomWidth: 1,
-        borderBottomColor: "black",
-        
-    },
-    title: {
-        fontSize: 25,
-        fontWeight: "bold",
-    },
+
+    superior: {
+        width: "100%",
+        height: vh(23),
+ },
+
+
+  
     inputs: {
         height: 40,
         margin: 12,

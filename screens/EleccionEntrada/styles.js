@@ -5,52 +5,41 @@ const styles = StyleSheet.create({
     container: {
       flex: 1,
       backgroundColor: '#A9E2F3',
-      
+      height: vh(100),
     },
 
     buttoncontainer: {
         width: "90%",
         margin: "5%",
         alignItems: "center",
+        justifyContent: "center",
         backgroundColor: 'white',
-      height: vh(87),
+        height: vh(87),
+
     },
    
 
-    
-    LogoSolo: {
-        width: "100%",
-        height: vh(23),
- },
-
-    imagencita: {
-        height: vh(15),
-        width: vh(40),
-    },
-    titlecontainer: {
-        height: vh(10),
-        alignItems: "center",
-        borderBottomWidth: 1,
-        borderBottomColor: "black",
+    superior1: {
+        marginTop: "2%",
+     right: "2%",
+        width: "80%",
+        height: vh(14),
         
-    },
-    title: {
-        fontSize: 30,
-        fontWeight: "bold",
-    },
-    inputs: {
-        height: 30,
-        margin: 12,
-        borderBottomWidth: 1,
-        borderBottomColor: "#2CDCCC",
-       
-    },
+        justifyContent: "center",
+ },
+    superior: {
+        
+        width: "64%",
+        height: vh(26),
+        
+        
+ },
 
     button: {
         backgroundColor: "#3FA9F5",
-        marginTop: "15%",
-        height: 55,
-        width: "50%",
+        marginTop: "28%",
+        height: 60,
+        width: "60%",
         borderRadius: 20,
         justifyContent: "center",
         borderWidth: 2,
@@ -61,8 +50,8 @@ const styles = StyleSheet.create({
     button2: {
         backgroundColor: "#3FA9F5",
         marginTop: "15%",
-        height: 55,
-        width: "50%",
+        height: 60,
+        width: "60%",
         borderRadius: 20,
         justifyContent: "center",
         borderWidth: 2,

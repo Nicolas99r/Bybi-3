@@ -17,8 +17,11 @@ function EleccionEntrada(props) {
         <View style={styles.container}>
            
         <View style={styles.buttoncontainer}>
-        <Image
-        style={styles.superior}
+
+        <Image style={styles.superior1}
+        source={require("../../assets/BybiLetrero1.png")}
+      />
+        <Image style={styles.superior}
         source={require("../../assets/LogoSolo.png")}
       />
 
