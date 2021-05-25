@@ -69,14 +69,13 @@ firebase.saveNewBike = async (setNombre, setModelo, setColor, setAccesorios) => 
         console.log("El UID de usuario es: " + user.uid);
         if (user) {
           console.log("El usuario está loggeado");
-          firebase.database().ref("users/" + user.uid).set({
-            ... state,
+          firebase.database().ref("users/" + user.uid).update({
               bike: bike.id,
           });
         }
       })
       .catch(function (error) {
-        alert("Logueadon´t");
+        alert(error);
       });
   }
 };

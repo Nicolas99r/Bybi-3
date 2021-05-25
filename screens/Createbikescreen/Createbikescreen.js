@@ -35,12 +35,11 @@ function Createbikescreen(props) {
           state.name,
           state.model,
           state.color,
-          state.accesories
+          state.accesories,
         );
       } catch (error) {}
     }
   };
-
   // COSAS DE BACK
 
   return (
