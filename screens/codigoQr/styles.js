@@ -10,8 +10,11 @@ const styles = StyleSheet.create({
     },
     qr: {
         height: vh(5),
-        width: vh(5),
+        width: vw(5),
+        alignItems: "center",
+        backgroundColor:'red',
     }
 })
 
-export default styles
+export default styles  
+

@@ -17,4 +17,4 @@ function CreateQR() {
   );
 }
 
-export default CreateQR;
+export default CreateQR; 
