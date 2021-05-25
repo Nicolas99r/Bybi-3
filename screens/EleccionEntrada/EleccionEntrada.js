@@ -15,6 +15,7 @@ function EleccionEntrada(props) {
     return (
 
         <View style={styles.container}>
+           
         <View style={styles.buttoncontainer}>
         <Image
         style={styles.superior}

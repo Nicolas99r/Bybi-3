@@ -15,6 +15,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'white',
       height: vh(87),
     },
+   
 
     
     LogoSolo: {
