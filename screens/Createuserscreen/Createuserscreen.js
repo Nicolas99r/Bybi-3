@@ -12,7 +12,25 @@ function Createuserscreen(props) {
   const [password, setPassword] = useState("");
   const [confPassword, setConfPassword] = useState("");
 
-  // COSAS DE BACK
+   /*
+
+   ====  ESTA ES LA FUNCIÓN CON LA ====
+   ==== QUE NOS COMUNICAMOS A BACK ====
+
+   const createUser = (...), realiza la verificación
+   de que los datos estén guardados y luego se hace
+   el llamado a la siguiente ventana con: 
+
+
+   (...)
+   password
+        );
+   props.navigation.navigate("Createbikescreen");
+   } catch (error) {
+     (...)
+
+   */
+
   const createUser = async () => {
     if (
       (nombre ||
@@ -38,7 +56,6 @@ function Createuserscreen(props) {
       }
     }
   };
-  // COSAS DE BACK
 
   return (
     <View style={styles.container}>

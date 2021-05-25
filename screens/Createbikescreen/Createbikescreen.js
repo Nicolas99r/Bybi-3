@@ -12,7 +12,6 @@ import styles from "./styles";
 import firebase from "../../database/firebase";
 
 function Createbikescreen(props) {
-  // COSAS DE BACK
   const [state, setState] = useState({
     name: "",
     model: "",
@@ -26,6 +25,17 @@ function Createbikescreen(props) {
       [name]: value,
     });
   };
+
+  /*
+
+   ====  ESTA ES LA FUNCIÓN CON LA ====
+   ==== QUE NOS COMUNICAMOS A BACK ====
+
+   const saveNewBike = (...), realiza la verificación
+   de que los datos estén guardados y luego se hace
+   el llamado a la siguiente ventana. 
+
+   */
 
   const saveNewBike = async () => {
     if ((state.name || state.model || state.color || state.accesories) === "") {
