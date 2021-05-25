@@ -44,11 +44,12 @@ function Createbikescreen(props) {
 
   return (
     <View style={styles.container}>
-      <View style={styles.inputcontainer}>
-        <View style={styles.titlecontainer}>
-          <Text style={styles.title}>Es turno de tu bicicleta</Text>
-          <Text style={styles.subtitle}>Recuerda cuidar bien de ella 😉</Text>
-        </View>
+    <Image
+      style={styles.superior}
+      source={require("../../assets/cabeza.png")}
+    />
+    <View style={styles.inputcontainer}>
+       
         <TextInput
           style={styles.inputs}
           placeholder="Nombre"

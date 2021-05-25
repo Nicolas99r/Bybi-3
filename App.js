@@ -18,7 +18,11 @@ const Stack = createStackNavigator();
 function MyStack() {
   return (
     <Stack.Navigator>
+<<<<<<< Updated upstream
      <Stack.Screen name="CodigoQr" component={codigoQr} />      
+=======
+      
+>>>>>>> Stashed changes
      <Stack.Screen name="EleccionEntrada" component={EleccionEntrada} /> 
         <Stack.Screen name="EleccionUser" component={EleccionUser} />
       <Stack.Screen name="Loginscreen" component={Loginscreen} />

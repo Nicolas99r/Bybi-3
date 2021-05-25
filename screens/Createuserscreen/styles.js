@@ -3,15 +3,18 @@ import { vw, vh, vmin, vmax } from 'react-native-expo-viewport-units';
 //Toca cambiar los porcentajes por "vh" porque pone rara por momentos la ubicación de los elementos
 
 const styles = StyleSheet.create({
+
     container: {
       flex: 1,
       backgroundColor: '#fff',
       alignItems: "center",
+      height: vh(100),
+      
     },
     inputcontainer: {
         marginTop: "5%",
-        width: "80%",
-        
+        width: "100%",
+       
     },
 
     superior: {
@@ -60,8 +63,8 @@ const styles = StyleSheet.create({
     inferior: {
         width: "100%",
         height: vh(17),
-        justifyContent: "flex-end",
-    }
+        alignItems: "flex-end",
+        }
 })
 
 export default styles
