@@ -6,36 +6,27 @@ const styles = StyleSheet.create({
       flex: 1,
       backgroundColor: '#fff',
       alignItems: "center",
+      height: vh(100),
     },
     inputcontainer: {
-        width: "50%",
+        width: "80%",
+        
+        height: vh(30),
+        marginTop: "15%",
     },
+   
     superior: {
         width: "100%",
-        height: vh(30),
+        height: vh(23),
+ },
+  
 
-    },
-    imagencita: {
-        height: vh(15),
-        width: vh(40),
-    },
-    titlecontainer: {
-        height: vh(10),
-        alignItems: "center",
-        borderBottomWidth: 1,
-        borderBottomColor: "black",
-        
-    },
-    title: {
-        fontSize: 30,
-        fontWeight: "bold",
-    },
     inputs: {
         height: 30,
         margin: 12,
         borderBottomWidth: 1,
         borderBottomColor: "#2CDCCC",
-       
+       fontSize: 15,
     },
 
     button: {
@@ -58,9 +49,7 @@ const styles = StyleSheet.create({
         marginTop: "7%",
     },
 
-    gotit2: {
-        marginTop: "1.5%",
-    },
+   
     already: {
         textDecorationLine: "none",
         color: "#A6A6A6",

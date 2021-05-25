@@ -3,10 +3,6 @@ import React, {useState} from 'react';
 import { View, Text, TextInput,Image, TouchableHighlight, TouchableOpacity, TouchableNativeFeedback } from 'react-native';
 import styles from './styles'
 
-
-
-
-
 function CreateQR() {
 //codigazo QR,  value = dato a encriptar, tqm
   return (
