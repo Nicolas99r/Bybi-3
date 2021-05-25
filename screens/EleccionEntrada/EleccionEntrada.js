@@ -19,18 +19,18 @@ function EleccionEntrada(props) {
         <View style={styles.buttoncontainer}>
 
         <Image style={styles.superior1}
-        source={require("../../assets/BybiLetrero1.png")}
+        source={require("../../assets/letras.png")}
       />
         <Image style={styles.superior}
         source={require("../../assets/LogoSolo.png")}
       />
 
-            <TouchableOpacity style={styles.button}onPress={() => props.navigation.navigate('Loginscreen')} >
+            <TouchableOpacity style={styles.button}onPress={() => props.navigation.navigate('LoginInst')} >
                 <Text style={styles.textbutton}>Iniciar Sesion</Text>
             </TouchableOpacity>
 
 
-            <TouchableOpacity style={styles.button2} onPress={() => props.navigation.navigate('Createuserscreen')} >
+            <TouchableOpacity style={styles.button2} onPress={() => props.navigation.navigate('EleccionUser')} >
                 <Text style={styles.textbutton}>Registrarse</Text>
             </TouchableOpacity>
             </View>

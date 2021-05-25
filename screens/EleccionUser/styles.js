@@ -5,13 +5,17 @@ const styles = StyleSheet.create({
       flex: 1,
       backgroundColor: '#fff',
       alignItems: "center",
+      height: vh(100),
     },
 
+   
+    
     buttoncontainer: {
         width: "80%",
         marginTop: "5%",
         alignItems: "center",
-
+        height: vh(30),
+        marginTop: "15%",
     },
     superior: {
         width: "100%",

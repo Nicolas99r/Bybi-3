@@ -21,18 +21,16 @@ const styles = StyleSheet.create({
 
     superior1: {
         marginTop: "2%",
-     right: "2%",
-        width: "80%",
-        height: vh(14),
-        
+        width: "44%",
+        height: vh(9.5),
         justifyContent: "center",
+        
+        
  },
     superior: {
-        
+        marginTop: "5%",
         width: "64%",
-        height: vh(26),
-        
-        
+        height: vh(26),      
  },
 
     button: {

@@ -9,8 +9,9 @@ const styles = StyleSheet.create({
       height: vh(100),
     },
     inputcontainer: {
-        marginTop: "20%",
+        marginTop: "5%",
         width: "80%",
+    
     },
 
     superior: {
@@ -19,37 +20,58 @@ const styles = StyleSheet.create({
  },
 
 
-  
-    inputs: {
-        height: 40,
-        margin: 12,
-        borderBottomWidth: 1,
-        borderBottomColor: "#B8D9DE",
-        
-    },
-    button: {
-        backgroundColor: "lightblue",
-        marginTop: "5%",
-        height: 40,
-        width: "50%",
-        borderRadius: 20,
-        justifyContent: "center",
-        borderWidth: 5,
-        borderColor: "#D0E9FA",
-        
-    },
-    textbutton: {
-        textAlign: "center",
-        fontSize: 20,
-        fontWeight: 'bold',
-        color: "#333D39"
-    },
-    gotit: {
-        marginTop: "5%",
-    },
-    already: {
-        textDecorationLine: "underline"
-    }
+ inputs: {
+    height: 30,
+    margin: 12,
+    borderBottomWidth: 1,
+    borderBottomColor: "#2CDCCC",
+    marginTop: "0.4%",
+    fontSize: 15,
+    
+},
+
+inputsfoto: {
+    height: 30,
+    margin: 12,
+    marginTop: "0.4%",
+    fontSize: 15,
+    
+},
+
+camaraimg: {
+width: "50%",
+height: vh(12),
+backgroundColor: "lightgray",
+left: "25%",
+},
+
+button: {
+    backgroundColor: "#3FA9F5",
+    marginTop: "8%",
+    height: 55,
+    width: "40%",
+    borderRadius: 20,
+    justifyContent: "center",
+    borderWidth: 2,
+    borderColor: "#4DFFCC",
+    
+},
+
+textbutton: {
+    textAlign: "center",
+    fontSize: 20,
+    color: "#FFFFFF",
+},
+
+
+    inferior: {
+        width: "100%",
+        height: vh(17),
+        alignItems: "flex-end",
+        },
+
+
+
 })
 
 export default styles
