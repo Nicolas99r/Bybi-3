@@ -6,10 +6,14 @@ const styles = StyleSheet.create({
       flex: 1,
       backgroundColor: '#fff',
       alignItems: "center",
+      height: vh(100),
+
     },
     inputcontainer: {
+        height: vh(30),
         width: "80%",
-        marginTop: "5%",
+        marginTop: "15%",
+        
     },
     superior: {
         width: "100%",
@@ -33,7 +37,7 @@ const styles = StyleSheet.create({
         margin: 12,
         borderBottomWidth: 1,
         borderBottomColor: "#2CDCCC",
-       
+        fontSize: 20,
     },
 
     button: {

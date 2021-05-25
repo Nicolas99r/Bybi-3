@@ -81,9 +81,7 @@ function Createuserscreen(props) {
         />
       </View>
       <TouchableOpacity
-        style={styles.button}
-        onPress={createUser}
-        //onPress={() => props.navigation.navigate('Createbikescreen')}
+        style={styles.button} onPress={() => props.navigation.navigate('Createbikescreen')}
       >
         <Text style={styles.textbutton}>Continuar</Text>
       </TouchableOpacity>
@@ -93,10 +91,11 @@ function Createuserscreen(props) {
       </Text>
       <TouchableOpacity
         style={styles.gotit}
-        onPress={() => props.navigation.navigate("Loginscreen")}
+        onPress={() => props.navigation.navigate("LoginInst")}
       >
         <Text style={styles.already}>¿Ya tienes una cuenta?</Text>
       </TouchableOpacity>
+      
       <Image
         style={styles.inferior}
         source={require("../../assets/BannerInferior.png")}

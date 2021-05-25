@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import {
   View,
   Text,
+  Image,
   TextInput,
   TouchableHighlight,
   TouchableOpacity,
@@ -44,10 +45,12 @@ function Createbikescreen(props) {
 
   return (
     <View style={styles.container}>
+    
     <Image
-      style={styles.superior}
-      source={require("../../assets/cabeza.png")}
-    />
+        style={styles.superior}
+        source={require("../../assets/cabeza.png")}
+      />
+
     <View style={styles.inputcontainer}>
        
         <TextInput
@@ -70,15 +73,44 @@ function Createbikescreen(props) {
           placeholder="Accesorios"
           onChangeText={(value) => handleChangeText("accesories", value)}
         />
+
+<TextInput
+          style={styles.inputsfoto}
+          placeholder="Foto:"
+          onChangeText={(value) => handleChangeText("foto", value)}
+        />
+<Image
+        style={styles.camaraimg}
+        source={require("../../assets/camara.png")}
+      />
+
+
+
       </View>
       <TouchableOpacity
-        style={styles.button}
+        style={styles.button} 
         onPress={() => {
           saveNewBike();
         }}
       >
-        <Text style={styles.textbutton}>¡Listo!</Text>
+        <Text style={styles.textbutton}>Continuar</Text>
       </TouchableOpacity>
+
+
+      
+
+
+
+
+      <Image
+        style={styles.inferior}
+        source={require("../../assets/BannerInferior.png")}
+      />
+
+
+
+
+
     </View>
   );
 }

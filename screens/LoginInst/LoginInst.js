@@ -28,8 +28,8 @@ function LoginInst(props) {
                 onChange={(e) => setPass(e.nativeEvent.text)}
                 />
             </View>
-            <TouchableOpacity style={styles.button} onPress={() => props.navigation.navigate('Createbikescreen')} >
-                <Text style={styles.textbutton}>Iniciar Sesión</Text>
+            <TouchableOpacity style={styles.button} onPress={() => props.navigation.navigate('codigoQr')} >
+                <Text style={styles.textbutton}>Continuar</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.gotit}>
                 <Text style={styles.already}>¿Olvidaste tu contraseña?</Text>

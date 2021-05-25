@@ -31,7 +31,7 @@ function EleccionUser(props) {
             </TouchableOpacity>
 
 
-            <TouchableOpacity style={styles.button2} onPress={() => props.navigation.navigate('LoginInst')} >
+            <TouchableOpacity style={styles.button2} onPress={() => props.navigation.navigate('Createuserscreen')} >
                 <Text style={styles.textbutton}>Institucional</Text>
             </TouchableOpacity>
             
