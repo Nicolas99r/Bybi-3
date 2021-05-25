@@ -9,8 +9,7 @@ import Createuserscreen from "./screens/Createuserscreen/Createuserscreen";
 import Createbikescreen from "./screens/Createbikescreen/Createbikescreen";
 import Loginscreen from "./screens/Loginscreen/Loginscreen";
 import LoginInst from "./screens/LoginInst/LoginInst";
-import EleccionUser from './screens/EleccionUser/EleccionUser';
-
+import EleccionUser from "./screens/EleccionUser/EleccionUser";
 
 const Stack = createStackNavigator();
 
@@ -18,8 +17,7 @@ const Stack = createStackNavigator();
 function MyStack() {
   return (
     <Stack.Navigator>
-        
-     <Stack.Screen name="EleccionEntrada" component={EleccionEntrada} /> 
+      <Stack.Screen name="EleccionEntrada" component={EleccionEntrada} />
       <Stack.Screen name="EleccionUser" component={EleccionUser} />
       <Stack.Screen name="Loginscreen" component={Loginscreen} />
       <Stack.Screen name="LoginInst" component={LoginInst} />

@@ -36,7 +36,7 @@ function Createbikescreen(props) {
           state.name,
           state.model,
           state.color,
-          state.accesories,
+          state.accesories
         );
       } catch (error) {}
     }
@@ -45,14 +45,12 @@ function Createbikescreen(props) {
 
   return (
     <View style={styles.container}>
-    
-    <Image
+      <Image
         style={styles.superior}
         source={require("../../assets/cabeza.png")}
       />
 
-    <View style={styles.inputcontainer}>
-       
+      <View style={styles.inputcontainer}>
         <TextInput
           style={styles.inputs}
           placeholder="Nombre"
@@ -74,21 +72,18 @@ function Createbikescreen(props) {
           onChangeText={(value) => handleChangeText("accesories", value)}
         />
 
-<TextInput
+        <TextInput
           style={styles.inputsfoto}
           placeholder="Foto:"
           onChangeText={(value) => handleChangeText("foto", value)}
         />
-<Image
-        style={styles.camaraimg}
-        source={require("../../assets/camara.png")}
-      />
-
-
-
+        <Image
+          style={styles.camaraimg}
+          source={require("../../assets/camara.png")}
+        />
       </View>
       <TouchableOpacity
-        style={styles.button} 
+        style={styles.button}
         onPress={() => {
           saveNewBike();
         }}
@@ -96,21 +91,10 @@ function Createbikescreen(props) {
         <Text style={styles.textbutton}>Continuar</Text>
       </TouchableOpacity>
 
-
-      
-
-
-
-
       <Image
         style={styles.inferior}
         source={require("../../assets/BannerInferior.png")}
       />
-
-
-
-
-
     </View>
   );
 }

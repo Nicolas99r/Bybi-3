@@ -15,7 +15,6 @@ var firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
-
 // Crear usuario
 function writeUserData(user) {
   firebase
@@ -41,7 +40,7 @@ firebase.createUser = async (
         codigoInstitucional: setCodigoInstitucional,
         correoInstitucional: setCorreoInstitucional,
         uid: data.user.uid,
-        bike: "empty"
+        bike: "empty",
       };
       console.log(data.user.uid);
       writeUserData(user);
@@ -50,7 +49,12 @@ firebase.createUser = async (
 // ----------------------------------------------
 
 // Crear bicicleta
-firebase.saveNewBike = async (setNombre, setModelo, setColor, setAccesorios) => {
+firebase.saveNewBike = async (
+  setNombre,
+  setModelo,
+  setColor,
+  setAccesorios
+) => {
   if ((setNombre || setModelo || setColor || setAccesorios) === "") {
     alert("Asegurate de llenar todos los campos 🙄");
   } else {
@@ -69,9 +73,12 @@ firebase.saveNewBike = async (setNombre, setModelo, setColor, setAccesorios) => 
         console.log("El UID de usuario es: " + user.uid);
         if (user) {
           console.log("El usuario está loggeado");
-          firebase.database().ref("users/" + user.uid).update({
+          firebase
+            .database()
+            .ref("users/" + user.uid)
+            .update({
               bike: bike.id,
-          });
+            });
         }
       })
       .catch(function (error) {

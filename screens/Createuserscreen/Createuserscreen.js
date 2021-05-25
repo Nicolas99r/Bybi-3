@@ -80,9 +80,7 @@ function Createuserscreen(props) {
           onChangeText={setConfPassword}
         />
       </View>
-      <TouchableOpacity
-        style={styles.button} onPress={() => props.navigation.navigate('Createbikescreen')}
-      >
+      <TouchableOpacity style={styles.button} onPress={createUser}>
         <Text style={styles.textbutton}>Continuar</Text>
       </TouchableOpacity>
       <Text style={styles.accept}>
@@ -95,7 +93,7 @@ function Createuserscreen(props) {
       >
         <Text style={styles.already}>¿Ya tienes una cuenta?</Text>
       </TouchableOpacity>
-      
+
       <Image
         style={styles.inferior}
         source={require("../../assets/BannerInferior.png")}
