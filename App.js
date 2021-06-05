@@ -13,7 +13,7 @@ import EleccionUser from "./screens/EleccionUser/EleccionUser";
 
 //Pantallas iteración II
 import InicioAdmin from "./screens/InicioAdmin/InicioAdmin";
-
+import EscanerQR from "./screens/EscanerQR/EscanerQR";
 const Stack = createStackNavigator();
 
 //Funcion que almacena las pantallas
@@ -22,7 +22,7 @@ function MyStack() {
     <Stack.Navigator>
 
 <Stack.Screen name="InicioAdmin" component={InicioAdmin} />
-
+<Stack.Screen name="EscanerQR" component={EscanerQR} />
 
 
       <Stack.Screen name="EleccionEntrada" component={EleccionEntrada} />

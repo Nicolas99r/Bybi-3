@@ -10,7 +10,7 @@ import {
 } from "react-native";
 import styles from "./styles";
 
-function InicioAdmin(props) {
+function EscanerQR(props) {
   const [user, setUser] = useState("");
   const [pass, setPass] = useState("");
 
@@ -24,22 +24,28 @@ function InicioAdmin(props) {
       />
 
       <TouchableOpacity style={styles.gotit}>
-        <Text style={styles.already}>Seleccione el proceso que desea realizar: </Text>
+        <Text style={styles.already}>¡Escanea el código QR! </Text>
       </TouchableOpacity>
+
+
+      <Image
+          style={styles.escaner}
+          source={require("../../assets/ScannQR.png")}
+        />
 
       <View style={styles.buttoncontainer}>
         <TouchableOpacity
           style={styles.button}
-          onPress={() => props.navigation.navigate("EscanerQR")}
+          onPress={() => props.navigation.navigate("Loginscreen")}
         >
-          <Text style={styles.textbutton}>Entrada</Text>
+          <Text style={styles.textbutton}>Visitante</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
           style={styles.button2}
         //  onPress={() => props.navigation.navigate("Createuserscreen")}
         >
-          <Text style={styles.textbutton}>Salida</Text>
+          <Text style={styles.textbutton}>Institucional</Text>
         </TouchableOpacity>
       </View>
 
@@ -51,4 +57,4 @@ function InicioAdmin(props) {
   );
 }
 
-export default InicioAdmin;
+export default EscanerQR;
