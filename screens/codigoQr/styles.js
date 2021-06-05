@@ -4,16 +4,24 @@ import { vw, vh, vmin, vmax } from 'react-native-expo-viewport-units';
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor:'#fff',
+        backgroundColor: '#fff',
         alignItems: "center",
-      
-    },
+        height: vh(100),
+      },
     qr: {
-        height: vh(5),
-        width: vw(5),
+        height: vh(18),
+        width: vw(40),
         alignItems: "center",
-        backgroundColor:'red',
-    }
+        backgroundColor:'#fff',
+    },
+    already: {
+        textDecorationLine: "none",
+        color: "#000000",
+    },
+    gotit: {
+        marginTop: "7%",
+    },
+    
 })
 
 export default styles  
