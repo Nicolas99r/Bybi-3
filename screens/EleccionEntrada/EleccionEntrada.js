@@ -45,5 +45,4 @@ function EleccionEntrada(props) {
     </View>
   );
 }
-
 export default EleccionEntrada;

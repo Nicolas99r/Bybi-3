@@ -11,12 +11,20 @@ import Loginscreen from "./screens/Loginscreen/Loginscreen";
 import LoginInst from "./screens/LoginInst/LoginInst";
 import EleccionUser from "./screens/EleccionUser/EleccionUser";
 
+//Pantallas iteración II
+import InicioAdmin from "./screens/InicioAdmin/InicioAdmin";
+
 const Stack = createStackNavigator();
 
 //Funcion que almacena las pantallas
 function MyStack() {
   return (
     <Stack.Navigator>
+
+<Stack.Screen name="InicioAdmin" component={InicioAdmin} />
+
+
+
       <Stack.Screen name="EleccionEntrada" component={EleccionEntrada} />
       <Stack.Screen name="EleccionUser" component={EleccionUser} />
       <Stack.Screen name="Loginscreen" component={Loginscreen} />
