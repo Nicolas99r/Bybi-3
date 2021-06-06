@@ -10,89 +10,93 @@ const styles = StyleSheet.create({
 
   buttoncontainer: {
     width: "80%",
-    marginTop: "5%",
+    marginTop: "2%",
     alignItems: "center",
-    height: vh(30),
-    marginTop: "15%",
+    height: vh(17),
+    
+    
   },
   superior: {
     width: "100%",
     height: vh(23),
   },
-  imagencita: {
-    height: vh(15),
-    width: vh(40),
-  },
+  
   titlecontainer: {
     height: vh(10),
     alignItems: "center",
     borderBottomWidth: 1,
-    borderBottomColor: "black",
+   
     //hola
   },
   title: {
     fontSize: 30,
     fontWeight: "bold",
+
   },
+
+  escaner: {
+    marginTop: "2%",
+    width: "66%",
+    height: vh(33),
+    
+  },
+
   inputs: {
     height: 30,
     margin: 12,
     borderBottomWidth: 1,
     borderBottomColor: "#2CDCCC",
+    
   },
 
   button: {
     backgroundColor: "#3FA9F5",
-    marginTop: "15%",
+    marginTop: "5%",
     height: 55,
     width: "50%",
     borderRadius: 20,
     justifyContent: "center",
     borderWidth: 2,
     borderColor: "#4DFFCC",
+    
+    
   },
 
   button2: {
     backgroundColor: "#3FA9F5",
-    marginTop: "15%",
+    marginTop: "5%",
     height: 55,
     width: "50%",
     borderRadius: 20,
     justifyContent: "center",
     borderWidth: 2,
     borderColor: "#4DFFCC",
+    
   },
 
-    button: {
-        backgroundColor: "#3FA9F5",
-        marginTop: "18%",
-        height: 55,
-        width: "50%",
-        borderRadius: 20,
-        justifyContent: "center",
-        borderWidth: 2,
-        borderColor: "#4DFFCC",
-        
-    },
 
 
   textbutton: {
     textAlign: "center",
     fontSize: 20,
     color: "#FFFFFF",
+    
   },
 
   already: {
-    marginTop: "8%",
+    marginTop: "5%",
     textDecorationLine: "none",
     color: "#A6A6A6",
-    fontSize: 20,
+    fontSize: 17,
+   
   },
   inferior: {
     width: "100%",
-    height: vh(17),
-    marginTop: "10%",
+    height: vh(13),
+    marginTop: "1%",
     justifyContent: "flex-end",
+    
+    
   },
 });
 

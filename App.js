@@ -13,16 +13,24 @@ import Loginvisitor from "./screens/Loginvisitor/Loginvisitor";
 import LoginInst from "./screens/LoginInst/LoginInst";
 import EleccionUser from "./screens/EleccionUser/EleccionUser";
 
+//Pantallas iteración II
+import InicioAdmin from "./screens/InicioAdmin/InicioAdmin";
+import EscanerQR from "./screens/EscanerQR/EscanerQR";
 const Stack = createStackNavigator();
 
 //Funcion que almacena las pantallas
 function MyStack() {
   return (
     <Stack.Navigator>
+
+      <Stack.Screen name="InicioAdmin" component={InicioAdmin} />
+      <Stack.Screen name="EscanerQR" component={EscanerQR} />
+
       <Stack.Screen name="LoginCelacho" component={LoginCelacho} />
       <Stack.Screen name="Loginvisitor" component={Loginvisitor} />
       <Stack.Screen name="Loginscreen" component={Loginscreen} />
       <Stack.Screen name="codigoQr" component={codigoQr} />
+
       <Stack.Screen name="EleccionEntrada" component={EleccionEntrada} />
       <Stack.Screen name="EleccionUser" component={EleccionUser} />
       <Stack.Screen name="LoginInst" component={LoginInst} />

@@ -86,12 +86,12 @@ const styles = StyleSheet.create({
     marginTop: "8%",
     textDecorationLine: "none",
     color: "#A6A6A6",
-    fontSize: 20,
+    fontSize: 17,
   },
   inferior: {
     width: "100%",
     height: vh(17),
-    marginTop: "10%",
+    marginTop: "20%",
     justifyContent: "flex-end",
   },
 });
