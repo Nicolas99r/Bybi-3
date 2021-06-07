@@ -25,6 +25,7 @@ function writeUserData(user) {
       console.log(error.message);
     });
 }
+
 firebase.createUser = async (
   setNombre,
   setCorreoInstitucional,

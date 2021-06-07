@@ -8,6 +8,8 @@ import {
   TouchableOpacity,
   TouchableNativeFeedback,
 } from "react-native";
+import QRCode from "react-native-qrcode-svg";
+import LeerQr from "../../database/LeerQr"
 import styles from "./styles";
 
 function EscanerQR(props) {
@@ -15,6 +17,10 @@ function EscanerQR(props) {
   const [pass, setPass] = useState("");
 
   const onPressLogin = () => {};
+  
+const onCodeScanned = (type, data) =>{
+console.log(data);
+};
 
   return (
     <View style={styles.container}>
@@ -27,11 +33,7 @@ function EscanerQR(props) {
         <Text style={styles.already}>¡Escanea el código QR! </Text>
       </TouchableOpacity>
 
-
-      <Image
-          style={styles.escaner}
-          source={require("../../assets/ScannQR.png")}
-        />
+      <LeerQr/>
 
       <View style={styles.buttoncontainer}>
         <TouchableOpacity
@@ -43,7 +45,7 @@ function EscanerQR(props) {
 
         <TouchableOpacity
           style={styles.button2}
-        //  onPress={() => props.navigation.navigate("Createuserscreen")}
+          //  onPress={() => props.navigation.navigate("Createuserscreen")}
         >
           <Text style={styles.textbutton}>Institucional</Text>
         </TouchableOpacity>
