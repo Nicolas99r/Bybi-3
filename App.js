@@ -8,7 +8,7 @@ import EleccionEntrada from "./screens/EleccionEntrada/EleccionEntrada";
 import Createuserscreen from "./screens/Createuserscreen/Createuserscreen";
 import Createbikescreen from "./screens/Createbikescreen/Createbikescreen";
 import Loginscreen from "./screens/Loginscreen/Loginscreen";
-import LoginCelacho from "./screens/LoginCelacho/Logincelacho";
+import EntradaInst from "./screens/EntradaInst/EntradaInst";
 import Loginvisitor from "./screens/Loginvisitor/Loginvisitor";
 import LoginInst from "./screens/LoginInst/LoginInst";
 import EleccionUser from "./screens/EleccionUser/EleccionUser";
@@ -26,7 +26,7 @@ function MyStack() {
       <Stack.Screen name="InicioAdmin" component={InicioAdmin} />
       <Stack.Screen name="EscanerQR" component={EscanerQR} />
 
-      <Stack.Screen name="LoginCelacho" component={LoginCelacho} />
+      <Stack.Screen name="EntradaInst" component={EntradaInst} />
       <Stack.Screen name="Loginvisitor" component={Loginvisitor} />
       <Stack.Screen name="Loginscreen" component={Loginscreen} />
       <Stack.Screen name="codigoQr" component={codigoQr} />
