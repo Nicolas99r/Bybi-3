@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
 
   superior: {
     width: "100%",
-    height: vh(23),
+    height: vh(28),
   },
   camaraimg: {
     width: "50%",

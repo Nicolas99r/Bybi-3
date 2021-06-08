@@ -10,14 +10,14 @@ const styles = StyleSheet.create({
 
   buttoncontainer: {
     width: "80%",
-    marginTop: "5%",
     alignItems: "center",
     height: vh(30),
-    marginTop: "15%",
+    marginTop: "0.5%",
+    
   },
   superior: {
     width: "100%",
-    height: vh(23),
+    height: vh(28),
   },
   imagencita: {
     height: vh(15),
@@ -28,6 +28,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     borderBottomWidth: 1,
     borderBottomColor: "black",
+    
     //hola
   },
   title: {
@@ -39,28 +40,31 @@ const styles = StyleSheet.create({
     margin: 12,
     borderBottomWidth: 1,
     borderBottomColor: "#2CDCCC",
+  
   },
 
   button: {
     backgroundColor: "#3FA9F5",
-    marginTop: "15%",
+    marginTop: "10%",
     height: 55,
     width: "50%",
     borderRadius: 20,
     justifyContent: "center",
     borderWidth: 2,
     borderColor: "#4DFFCC",
+    
   },
 
   button2: {
     backgroundColor: "#3FA9F5",
-    marginTop: "15%",
+    marginTop: "10%",
     height: 55,
     width: "50%",
     borderRadius: 20,
     justifyContent: "center",
     borderWidth: 2,
     borderColor: "#4DFFCC",
+    
   },
 
     button: {
@@ -80,13 +84,15 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontSize: 20,
     color: "#FFFFFF",
+    
   },
 
   already: {
     marginTop: "8%",
     textDecorationLine: "none",
     color: "#A6A6A6",
-    fontSize: 17,
+    fontSize: 20,
+    
   },
   inferior: {
     width: "100%",

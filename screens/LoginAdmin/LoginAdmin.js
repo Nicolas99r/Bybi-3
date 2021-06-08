@@ -7,60 +7,67 @@ import {
   TouchableHighlight,
   TouchableOpacity,
   TouchableNativeFeedback,
+  KeyboardAvoidingView,
 } from "react-native";
 import styles from "./styles";
 
-function EntradaInst(props) {
+function LoginAdmin(props) {
   const [user, setUser] = useState("");
   const [pass, setPass] = useState("");
 
   const onPressLogin = () => {};
 
   return (
-    <View style={styles.container}>
+    <KeyboardAvoidingView style={styles.container}>
       <Image
         style={styles.superior}
         source={require("../../assets/cabeza.png")}
       />
-
+<TouchableOpacity style={styles.gotit}>
+        <Text style={styles.already}>Sección de administrador </Text>
+      </TouchableOpacity>
       <View style={styles.inputcontainer}>
         <TextInput
           style={styles.inputs}
-          placeholder="Nombre"
+          placeholder="Correo: "
           value={user}
           onChange={(e) => setUser(e.nativeEvent.text)}
         />
         <TextInput
           style={styles.inputs}
-          placeholder="Codigo Insitucional"
+          placeholder="Contraseña: "
+          password={true}
+          secureTextEntry={true}
           value={pass}
           onChange={(e) => setPass(e.nativeEvent.text)}
         />
-        <TextInput
-          style={styles.inputsfoto}
-          placeholder="Foto:"
-          onChangeText={(value) => handleChangeText("foto", value)}
-        />
-        <Image
-          style={styles.camaraimg}
-          source={require("../../assets/camara.png")}
-        />
       </View>
-      <Text style={styles.textbutton}>Continuar</Text>
 
       <TouchableOpacity
         style={styles.button}
-        onPress={() => props.navigation.navigate("Requisitos")}
+        onPress={() => props.navigation.navigate("InicioAdmin")}
       >
         <Text style={styles.textbutton}>Continuar</Text>
+      </TouchableOpacity>
+
+
+      <TouchableOpacity style={styles.gotit}>
+        <Text style={styles.already}>¿Olvidaste tu contraseña?</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        style={styles.gotit2}
+        onPress={() => props.navigation.navigate("Createuserscreen")}
+      >
+        <Text style={styles.already}>¿Aún no tienes una cuenta?</Text>
       </TouchableOpacity>
 
       <Image
         style={styles.inferior}
         source={require("../../assets/BannerInferior.png")}
       />
-    </View>
+    </KeyboardAvoidingView>
   );
 }
 
-export default EntradaInst;
+export default LoginAdmin;

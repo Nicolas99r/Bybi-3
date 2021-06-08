@@ -14,13 +14,13 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     backgroundColor: "white",
-    height: vh(87),
+    height: vh(85),
   },
 
   superior1: {
     marginTop: "2%",
-    width: "45%",
-    height: vh(12),
+    width: "53%",
+    height: vh(14),
     justifyContent: "center",
   },
   superior: {
@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
 
   button: {
     backgroundColor: "#3FA9F5",
-    marginTop: "28%",
+    marginTop: "20%",
     height: 60,
     width: "60%",
     borderRadius: 20,
@@ -40,17 +40,17 @@ const styles = StyleSheet.create({
     borderColor: "#4DFFCC",
   },
 
-  button2: {
-    backgroundColor: "#3FA9F5",
-    marginTop: "15%",
-    height: 60,
-    width: "60%",
-    borderRadius: 20,
-    justifyContent: "center",
-    borderWidth: 2,
-    borderColor: "#4DFFCC",
+  
+
+  already: {
+    marginTop: "5%",
+    textDecorationLine: "none",
+    color: "#A6A6A6",
+    fontSize: 20,
+   
   },
 
+  
   textbutton: {
     textAlign: "center",
     fontSize: 20,
