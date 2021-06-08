@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     width: vh(40),
     flexDirection: "row",
     justifyContent: "space-around",
-    alignItemsArr: "center",
+    alignItems: "center",
   },
 
   contenedorcasco: {
