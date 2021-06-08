@@ -25,12 +25,12 @@ const Stack = createStackNavigator();
 function MyStack() {
   return (
     <Stack.Navigator>
+      <Stack.Screen name="Requisitos" component={Requisitos} />
       <Stack.Screen name="BienvenidoAdmin" component={BienvenidoAdmin} />
      
       <Stack.Screen name="LoginAdmin" component={LoginAdmin} />
       <Stack.Screen name="InicioAdmin" component={InicioAdmin} />
       <Stack.Screen name="EscanerQR" component={EscanerQR} />
-      <Stack.Screen name="Requisitos" component={Requisitos} />
       <Stack.Screen name="NumPlaza" component={NumPlaza} />
       <Stack.Screen name="EntradaInst" component={EntradaInst} />
       <Stack.Screen name="Loginvisitor" component={Loginvisitor} />

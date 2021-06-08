@@ -24,7 +24,7 @@ function Requisitos(props) {
     } else if (isSelected !== false && isSelected2 == false) {
       alert("Estas aceptando continuar sin guaya");
     } else if (isSelected == false && isSelected2 == false) {
-      alert("¡No puedes ingresar sin ningún requisito de seguridad!");
+      alert("Aceptas ingresar bajo tu responsabilidad sin el/los requisito(s) de seguridad, teniendo en cuenta que corre riesgo tu vida y la seguridad de tu bicicleta. ");
     } else if (isSelected == true && isSelected2 == true) {
       alert("Acepta continuar con todos los requisitos de seguridad");
     }
@@ -87,7 +87,6 @@ function Requisitos(props) {
 
         <TouchableOpacity
           style={styles.button2}
-         
         >
           <Text style={styles.textbutton} onPress={onPressLogin}>
             Acepto
