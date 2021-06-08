@@ -16,6 +16,7 @@ function Requisitos(props) {
   const [user, setUser] = useState("");
   const [pass, setPass] = useState("");
   const [isSelected, setSelected] = useState(false);
+  const [isSelected2, setSelected2] = useState(false);
   const onPressLogin = () => {};
 
   return (
@@ -45,6 +46,26 @@ function Requisitos(props) {
                 checkedColor="green"
                 checked={isSelected}
                 onPress={() => setSelected(!isSelected)}
+              />
+            
+          </View>
+      </View>
+      <View style={styles.c2}>
+        <View style={styles.contenedorcandado}>
+          <Image
+            style={styles.candado}
+            source={require("../../assets/candado.png")}
+          />
+        </View>
+
+          <View style={styles.contedenorcheck2}>
+              <CheckBox
+                title="candado y guaya"
+                checkedIcon="check"
+                uncheckedIcon="square-o"
+                checkedColor="green"
+                checked={isSelected2}
+                onPress={() => setSelected2(!isSelected2)}
               />
             
           </View>

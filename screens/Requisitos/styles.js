@@ -30,13 +30,33 @@ const styles = StyleSheet.create({
     justifyContent: "space-around",
     alignItems: "center",
   },
+  c2: {
+    marginTop: "5%",
+    height: vh(11),
+    width: vh(40),
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItems: "center",
+  },
 
   contenedorcasco: {
     height: vh(10),
     width: vh(10.5),
   },
 
+  contenedorcandado: {
+    height: vh(11),
+    width: vh(10.5),
+    backgroundColor: "white",
+  },
+
   contedenorcheck: {
+    height: vh(10),
+    width: vh(8),
+    justifyContent: "center",
+  },
+
+  contedenorcheck2: {
     height: vh(10),
     width: vh(8),
     justifyContent: "center",
@@ -48,18 +68,21 @@ const styles = StyleSheet.create({
   },
 
   casco: {
-    height: vh(10),
+    height: vh(10.5),
   },
-
+  candado: {
+    height: vh(11),
+  },
+  textbutton: {
+    textAlign: "center",
+    fontSize: 20,
+    color: "#FFFFFF",
+  },
   inputs: {
     height: 30,
     margin: 12,
     borderBottomWidth: 1,
     borderBottomColor: "#2CDCCC",
-  },
-
-  checkbox: {
-    backgroundColor: "red",
   },
 
   button: {
