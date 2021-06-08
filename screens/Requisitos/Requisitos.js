@@ -17,8 +17,22 @@ function Requisitos(props) {
   const [pass, setPass] = useState("");
   const [isSelected, setSelected] = useState(false);
   const [isSelected2, setSelected2] = useState(false);
-  const onPressLogin = () => {};
+  const onPressLogin = () => {
+    if (
+      (isSelected == true || isSelected2== true)) {
+        alert("¡La seguridad es lo primordial!");
+      } else if(
+      (isSelected == false || isSelected2 !== false)) {
+      alert("Estas aceptando continuar sin casco");
+    } else if ( (isSelected !== false || isSelected2 == false) ) {
+      alert("Estas aceptando continuar sin guaya");
+    }  else if ( (isSelected == false || isSelected2 == false) ) {
+      alert("¡No puedes ingresar sin ningún requisito de seguridad!");
+    }
+  };
 
+
+  
   return (
     <View style={styles.container}>
       <Image
@@ -75,7 +89,7 @@ function Requisitos(props) {
         style={styles.button2}
         // onPress={() => props.navigation.navigate("Requisitos1")}
       >
-        <Text style={styles.textbutton}>Continuar</Text>
+        <Text style={styles.textbutton} onPress={onPressLogin}>Continuar</Text>
       </TouchableOpacity>
 
       <Image

@@ -78,6 +78,18 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: "#FFFFFF",
   },
+
+  button2: {
+    backgroundColor: "#3FA9F5",
+    marginTop: "5%",
+    height: 55,
+    width: "40%",
+    borderRadius: 20,
+    justifyContent: "center",
+    borderWidth: 2,
+    borderColor: "#4DFFCC",
+  },
+
   inputs: {
     height: 30,
     margin: 12,
