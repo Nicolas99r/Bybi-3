@@ -47,3 +47,6 @@ export default function App() {
     </NavigationContainer>
   );
 }
+
+//Prubea julieta
+//Prueba oscar
