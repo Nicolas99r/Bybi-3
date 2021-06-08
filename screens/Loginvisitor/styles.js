@@ -10,7 +10,6 @@ const styles = StyleSheet.create({
   },
   inputcontainer: {
     width: "80%",
-
     height: vh(30),
     marginTop: "15%",
   },

@@ -17,6 +17,7 @@ import EleccionUser from "./screens/EleccionUser/EleccionUser";
 import InicioAdmin from "./screens/InicioAdmin/InicioAdmin";
 import EscanerQR from "./screens/EscanerQR/EscanerQR";
 import Requisitos from "./screens/Requisitos/Requisitos";
+import Loginvisitor from "./screens/Loginvisitor/Loginvisitor";
 const Stack = createStackNavigator();
 
 //Funcion que almacena las pantallas

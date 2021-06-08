@@ -32,6 +32,7 @@ function EscanerQR(props) {
       </TouchableOpacity>
 
       <LeerQr onCodeScanned={onCodeScanned}/>
+
       <Text>Type: {type}</Text>
       <Text>Data: {data}</Text>
 

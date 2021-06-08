@@ -14,16 +14,8 @@ const styles = StyleSheet.create({
     height: vh(30),
     marginTop: "15%",
   },
-  button: {
-    backgroundColor: "#3FA9F5",
-    marginTop: "5%",
-    height: 55,
-    width: "40%",
-    borderRadius: 20,
-    justifyContent: "center",
-    borderWidth: 2,
-    borderColor: "#4DFFCC",
-  },
+  
+
   textbutton: {
     textAlign: "center",
     fontSize: 20,
