@@ -89,5 +89,19 @@ firebase.saveNewBike = async (
 };
 
 // ----------------------------------------------
+//Entrada cicla
+firebase.entradaCicla = async (adentro) => {
+  await then(function (inside) {
+    var user = firebase.auth().currentUser;
+    firebase
+      .database()
+      .ref("users/" + user.inside)
+      .update({
+        inside: true,
+      });
+  }).catch(function (error) {
+    alert(error);
+  });
+};
 
 export default firebase;
