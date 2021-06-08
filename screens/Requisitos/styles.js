@@ -9,41 +9,47 @@ const styles = StyleSheet.create({
     height: vh(100),
   },
 
-
-
-  checkboxcontainer: {
-    width: "30%",
-    marginTop: "2%",
-    alignItems: "center",
-    height: vh(8),
-    backgroundColor: "red", 
-    left: "35%",
-   
-  },
-
   superior: {
     width: "100%",
     height: vh(23),
   },
-  
+
   titlecontainer: {
     height: vh(10),
     alignItems: "center",
     borderBottomWidth: 1,
-   
+
     //hola
+    //CHAO
   },
+  c1: {
+    marginTop: "5%",
+    height: vh(10),
+    width: vh(40),
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItemsArr: "center",
+  },
+
+  contenedorcasco: {
+    height: vh(10),
+    width: vh(10.5),
+  },
+
+  contedenorcheck: {
+    height: vh(10),
+    width: vh(8),
+    justifyContent: "center",
+  },
+
   title: {
     fontSize: 30,
     fontWeight: "bold",
-},
+  },
 
   casco: {
-    marginTop: "2%",
-    width: "30%",
     height: vh(10),
-    left: "-50%",
-   },
+  },
 
   inputs: {
     height: 30,
@@ -52,8 +58,7 @@ const styles = StyleSheet.create({
     borderBottomColor: "#2CDCCC",
   },
 
-  checkbox:
-  {
+  checkbox: {
     backgroundColor: "red",
   },
 
@@ -66,30 +71,25 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     borderWidth: 2,
     borderColor: "#4DFFCC",
-    
   },
 
   textbutton: {
     textAlign: "center",
     fontSize: 20,
     color: "#FFFFFF",
-    
   },
 
   already: {
     marginTop: "5%",
     textDecorationLine: "none",
-    color: "#A6A6A6",
+    color: "#090909",
     fontSize: 17,
-   
   },
   inferior: {
     width: "100%",
     height: vh(13),
     marginTop: "1%",
     justifyContent: "flex-end",
-    
-    
   },
 });
 export default styles;

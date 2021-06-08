@@ -23,6 +23,7 @@ const Stack = createStackNavigator();
 function MyStack() {
   return (
     <Stack.Navigator>
+      <Stack.Screen name="Requisitos" component={Requisitos} />
       <Stack.Screen name="InicioAdmin" component={InicioAdmin} />
       <Stack.Screen name="EscanerQR" component={EscanerQR} />
       <Stack.Screen name="EntradaInst" component={EntradaInst} />
@@ -34,7 +35,6 @@ function MyStack() {
       <Stack.Screen name="LoginInst" component={LoginInst} />
       <Stack.Screen name="Createuserscreen" component={Createuserscreen} />
       <Stack.Screen name="Createbikescreen" component={Createbikescreen} />
-      <Stack.Screen name="Requisitos" component={Requisitos} />
     </Stack.Navigator>
   );
 }

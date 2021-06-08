@@ -28,24 +28,26 @@ function Requisitos(props) {
         <Text style={styles.already}>Requisitos de seguridad </Text>
       </TouchableOpacity>
 
-      <View style={styles.contenedor}>
-        <Image
-          style={styles.casco}
-          source={require("../../assets/casco.png")}
-        />
-        <View style={styles.checkboxcontainer}>
-          <View>
-            <CheckBox
-              style={styles.checkbox}
-              title="Casco"
-              checkedIcon="check"
-              uncheckedIcon="square-o"
-              checkedColor="green"
-              checked={isSelected}
-              onPress={() => setSelected(!isSelected)}
-            />
-          </View>
+      <View style={styles.c1}>
+        <View style={styles.contenedorcasco}>
+          <Image
+            style={styles.casco}
+            source={require("../../assets/casco.png")}
+          />
         </View>
+
+          <View style={styles.contedenorcheck}>
+              <CheckBox
+                style={styles.checkbox}
+                title="Casco"
+                checkedIcon="check"
+                uncheckedIcon="square-o"
+                checkedColor="green"
+                checked={isSelected}
+                onPress={() => setSelected(!isSelected)}
+              />
+            
+          </View>
       </View>
 
       <TouchableOpacity
