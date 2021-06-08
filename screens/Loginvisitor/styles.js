@@ -11,7 +11,8 @@ const styles = StyleSheet.create({
   inputcontainer: {
     width: "80%",
     height: vh(30),
-    marginTop: "15%",
+    marginTop: "12%",
+    
   },
 
   superior: {
@@ -29,7 +30,8 @@ const styles = StyleSheet.create({
     margin: 12,
     borderBottomWidth: 1,
     borderBottomColor: "#2CDCCC",
-    fontSize: 15,
+    fontSize: 17,
+    
   },
 
   button: {

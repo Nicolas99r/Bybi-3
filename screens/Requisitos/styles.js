@@ -9,92 +9,50 @@ const styles = StyleSheet.create({
     height: vh(100),
   },
 
-  superior: {
-    width: "100%",
-    height: vh(23),
+  checkboxcontainer: {
+    width: "30%",
+    marginTop: "2%",
+    alignItems: "center",
+    height: vh(8),
+    backgroundColor: "red", 
+    left: "35%",
+   
   },
 
+  superior: {
+    width: "100%",
+    height: vh(28),
+  },
+  
   titlecontainer: {
     height: vh(10),
     alignItems: "center",
     borderBottomWidth: 1,
-
+   
     //hola
-    //CHAO
   },
-  c1: {
-    marginTop: "5%",
-    height: vh(10),
-    width: vh(40),
-    flexDirection: "row",
-    justifyContent: "space-around",
-    alignItems: "center",
-  },
-  c2: {
-    marginTop: "5%",
-    height: vh(11),
-    width: vh(40),
-    flexDirection: "row",
-    justifyContent: "space-around",
-    alignItems: "center",
-  },
-
-  contenedorcasco: {
-    height: vh(10),
-    width: vh(10.5),
-  },
-
-  contenedorcandado: {
-    height: vh(11),
-    width: vh(10.5),
-    backgroundColor: "white",
-  },
-
-  contedenorcheck: {
-    height: vh(10),
-    width: vh(8),
-    justifyContent: "center",
-  },
-
-  contedenorcheck2: {
-    height: vh(10),
-    width: vh(8),
-    justifyContent: "center",
-  },
-
   title: {
     fontSize: 30,
     fontWeight: "bold",
-  },
+},
 
   casco: {
-    height: vh(10.5),
-  },
-  candado: {
-    height: vh(11),
-  },
-  textbutton: {
-    textAlign: "center",
-    fontSize: 20,
-    color: "#FFFFFF",
-  },
-
-  button2: {
-    backgroundColor: "#3FA9F5",
-    marginTop: "5%",
-    height: 55,
-    width: "40%",
-    borderRadius: 20,
-    justifyContent: "center",
-    borderWidth: 2,
-    borderColor: "#4DFFCC",
-  },
+    marginTop: "2%",
+    width: "30%",
+    height: vh(10),
+    left: "-50%",
+   },
 
   inputs: {
     height: 30,
     margin: 12,
     borderBottomWidth: 1,
     borderBottomColor: "#2CDCCC",
+  },
+
+  checkbox:
+  {
+    backgroundColor: "red",
   },
 
   button: {
@@ -106,25 +64,60 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     borderWidth: 2,
     borderColor: "#4DFFCC",
+    
+  },
+  button2: {
+    backgroundColor: "#3FA9F5",
+    marginTop: "5%",
+    height: 45,
+    width: "40%",
+    borderRadius: 20,
+    justifyContent: "center",
+    borderWidth: 2,
+    borderColor: "#4DFFCC",
+    
+  },
+  
+  button3: {
+    backgroundColor: "#3FA9F5",
+    marginTop: "1%",
+    height: 45,
+    width: "40%",
+    borderRadius: 20,
+    justifyContent: "center",
+    borderWidth: 2,
+    borderColor: "#4DFFCC",
+    
+  },
+
+  textbutton1: {
+    textAlign: "center",
+    fontSize: 20,
+    color: "#FFFFFF",
+    
   },
 
   textbutton: {
     textAlign: "center",
     fontSize: 20,
     color: "#FFFFFF",
+    
   },
 
   already: {
     marginTop: "5%",
     textDecorationLine: "none",
-    color: "#090909",
+    color: "#A6A6A6",
     fontSize: 17,
+   
   },
   inferior: {
     width: "100%",
     height: vh(13),
     marginTop: "1%",
     justifyContent: "flex-end",
+    
+    
   },
 });
 export default styles;

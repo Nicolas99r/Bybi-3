@@ -25,10 +25,11 @@ function Requisitos(props) {
       alert("Estas aceptando continuar sin guaya");
     } else if (isSelected == false && isSelected2 == false) {
       alert("¡No puedes ingresar sin ningún requisito de seguridad!");
+    } else if (isSelected == true && isSelected2 == true) {
+      alert("Acepta continuar con todos los requisitos de seguridad");
     }
- 
- 
   };
+
 
   return (
     <View style={styles.container}>
@@ -59,6 +60,7 @@ function Requisitos(props) {
                 onPress={() => setSelected(!isSelected)}
               />
             
+
           </View>
           </View>
 
@@ -79,17 +81,25 @@ function Requisitos(props) {
               checked={isSelected2}
               onPress={() => setSelected2(!isSelected2)}
             />
+
           </View>
         </View>
 
         <TouchableOpacity
           style={styles.button2}
-          // onPress={() => props.navigation.navigate("Requisitos1")}
+         
         >
           <Text style={styles.textbutton} onPress={onPressLogin}>
-            Continuar
+            Acepto
           </Text>
         </TouchableOpacity>
+
+        <TouchableOpacity
+        style={styles.button3}
+        onPress={() => props.navigation.navigate("NumPlaza")}
+      >
+        <Text style={styles.textbutton1}>Continuar</Text>
+      </TouchableOpacity>
 
         <Image
           style={styles.inferior}
