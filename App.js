@@ -16,26 +16,25 @@ import EleccionUser from "./screens/EleccionUser/EleccionUser";
 //Pantallas iteración II
 import InicioAdmin from "./screens/InicioAdmin/InicioAdmin";
 import EscanerQR from "./screens/EscanerQR/EscanerQR";
+import Requisitos from "./screens/Requisitos/Requisitos";
 const Stack = createStackNavigator();
 
 //Funcion que almacena las pantallas
 function MyStack() {
   return (
     <Stack.Navigator>
-
       <Stack.Screen name="InicioAdmin" component={InicioAdmin} />
       <Stack.Screen name="EscanerQR" component={EscanerQR} />
-
       <Stack.Screen name="EntradaInst" component={EntradaInst} />
       <Stack.Screen name="Loginvisitor" component={Loginvisitor} />
       <Stack.Screen name="Loginscreen" component={Loginscreen} />
       <Stack.Screen name="codigoQr" component={codigoQr} />
-
       <Stack.Screen name="EleccionEntrada" component={EleccionEntrada} />
       <Stack.Screen name="EleccionUser" component={EleccionUser} />
       <Stack.Screen name="LoginInst" component={LoginInst} />
       <Stack.Screen name="Createuserscreen" component={Createuserscreen} />
       <Stack.Screen name="Createbikescreen" component={Createbikescreen} />
+      <Stack.Screen name="Requisitos" component={Requisitos} />
     </Stack.Navigator>
   );
 }

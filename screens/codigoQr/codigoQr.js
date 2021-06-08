@@ -1,4 +1,3 @@
-import QRCode from "react-qr-code";
 import React, { useState } from "react";
 import {
   View,
@@ -9,24 +8,57 @@ import {
   TouchableOpacity,
   TouchableNativeFeedback,
 } from "react-native";
+import QRCode from "react-native-qrcode-svg";
+import LeerQr from "../../database/LeerQr";
 import styles from "./styles";
 
-function CreateQR() {
-  //codigazo QR,  value = dato a encriptar, tqm
+function EscanerQR(props) {
+  const [user, setUser] = useState("");
+  const [pass, setPass] = useState("");
+
+  const onPressLogin = () => {};
+
+  const onCodeScanned = (type, data) => {
+    console.log(data);
+  };
+
   return (
-    <View styles={styles.container}>
+    <View style={styles.container}>
+      <Image
+        style={styles.superior}
+        source={require("../../assets/cabeza.png")}
+      />
+
       <TouchableOpacity style={styles.gotit}>
-        <Text style={styles.already}>¡UTILIZA TU CODIGO QR!</Text>
+        <Text style={styles.already}>¡Escanea el código QR! </Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.qr}>
-        <QRCode
-          value="Hola Mundo"
-          size="150"
-        level="H"
-        />
-      </TouchableOpacity>
+
+      <LeerQr />
+
+      <View style={styles.buttoncontainer}>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => props.navigation.navigate("Loginvisitor")}
+        >
+          <Text style={styles.textbutton}>Visitante</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          style={styles.button2}
+          onPress={() => props.navigation.navigate("LoginCelacho")}
+
+          //  onPress={() => props.navigation.navigate("Createuserscreen")}
+        >
+          <Text style={styles.textbutton}>Institucional</Text>
+        </TouchableOpacity>
+      </View>
+
+      <Image
+        style={styles.inferior}
+        source={require("../../assets/BannerInferior.png")}
+      />
     </View>
   );
 }
 
-export default CreateQR;
+export default EscanerQR;

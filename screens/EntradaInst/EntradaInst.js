@@ -10,7 +10,7 @@ import {
 } from "react-native";
 import styles from "./styles";
 
-function LoginCelacho(props) {
+function EntradaInst(props) {
   const [user, setUser] = useState("");
   const [pass, setPass] = useState("");
 
@@ -48,6 +48,13 @@ function LoginCelacho(props) {
       </View>
       <Text style={styles.textbutton}>Continuar</Text>
 
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => props.navigation.navigate("Requisitos1")}
+      >
+        <Text style={styles.textbutton}>Continuar</Text>
+      </TouchableOpacity>
+
       <Image
         style={styles.inferior}
         source={require("../../assets/BannerInferior.png")}
@@ -56,4 +63,4 @@ function LoginCelacho(props) {
   );
 }
 
-export default LoginCelacho;
+export default EntradaInst;

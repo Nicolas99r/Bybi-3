@@ -38,7 +38,7 @@ export default function LeerQr(props) {
         style={StyleSheet.absoluteFillObject}
       />
       {scanned && (
-        <Button title={"Tap to Scan Again"} onPress={() => setScanned(false)} />
+        <Button title={"Escanear nuevamente"} onPress={() => setScanned(false)} />
       )}
     </View>
   );
