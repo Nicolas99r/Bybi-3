@@ -18,21 +18,17 @@ function Requisitos(props) {
   const [isSelected, setSelected] = useState(false);
   const [isSelected2, setSelected2] = useState(false);
   const onPressLogin = () => {
-    if (
-      (isSelected == true || isSelected2== true)) {
-        alert("¡La seguridad es lo primordial!");
-      } else if(
-      (isSelected == false || isSelected2 !== false)) {
+    if (isSelected == true || isSelected2 == true) {
+      alert("¡La!");
+    } else if (isSelected == false || isSelected2 !== false) {
       alert("Estas aceptando continuar sin casco");
-    } else if ( (isSelected !== false || isSelected2 == false) ) {
+    } else if (isSelected !== false || isSelected2 == false) {
       alert("Estas aceptando continuar sin guaya");
-    }  else if ( (isSelected == false || isSelected2 == false) ) {
+    } else if (isSelected == false || isSelected2 == false) {
       alert("¡No puedes ingresar sin ningún requisito de seguridad!");
     }
   };
 
-
-  
   return (
     <View style={styles.container}>
       <Image
@@ -43,7 +39,6 @@ function Requisitos(props) {
         <Text style={styles.already}>Requisitos de seguridad </Text>
       </TouchableOpacity>
 
-<<<<<<< Updated upstream
       <View style={styles.c1}>
         <View style={styles.contenedorcasco}>
           <Image
@@ -62,60 +57,45 @@ function Requisitos(props) {
                 checked={isSelected}
                 onPress={() => setSelected(!isSelected)}
               />
-=======
-      <View style={styles.contenedor}>
-        <Image
-          style={styles.casco}
-          source={require("../../assets/casco.png")}
-        />
-        <View style={styles.checkboxcontainer}>
-          <View>
+            
+          </View>
+          </View>
+
+        <View style={styles.c2}>
+          <View style={styles.contenedorcandado}>
+            <Image
+              style={styles.candado}
+              source={require("../../assets/candado.png")}
+            />
+          </View>
+
+          <View style={styles.contedenorcheck2}>
             <CheckBox
-              style={styles.checkbox}
-              title="Casco"
+              title="candado y guaya"
               checkedIcon="check"
               uncheckedIcon="square-o"
               checkedColor="green"
-              checked={isSelected}
-              onPress={() => setSelected(!isSelected)}
+              checked={isSelected2}
+              onPress={() => setSelected2(!isSelected2)}
             />
->>>>>>> Stashed changes
-            
           </View>
-      </View>
-      <View style={styles.c2}>
-        <View style={styles.contenedorcandado}>
-          <Image
-            style={styles.candado}
-            source={require("../../assets/candado.png")}
-          />
         </View>
 
-          <View style={styles.contedenorcheck2}>
-              <CheckBox
-                title="candado y guaya"
-                checkedIcon="check"
-                uncheckedIcon="square-o"
-                checkedColor="green"
-                checked={isSelected2}
-                onPress={() => setSelected2(!isSelected2)}
-              />
-            
-          </View>
-      </View>
+        <TouchableOpacity
+          style={styles.button2}
+          // onPress={() => props.navigation.navigate("Requisitos1")}
+        >
+          <Text style={styles.textbutton} onPress={onPressLogin}>
+            Continuar
+          </Text>
+        </TouchableOpacity>
 
-      <TouchableOpacity
-        style={styles.button2}
-        // onPress={() => props.navigation.navigate("Requisitos1")}
-      >
-        <Text style={styles.textbutton} onPress={onPressLogin}>Continuar</Text>
-      </TouchableOpacity>
-
-      <Image
-        style={styles.inferior}
-        source={require("../../assets/BannerInferior.png")}
-      />
+        <Image
+          style={styles.inferior}
+          source={require("../../assets/BannerInferior.png")}
+        />
     </View>
+  
   );
 }
 
