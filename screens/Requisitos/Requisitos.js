@@ -18,15 +18,16 @@ function Requisitos(props) {
   const [isSelected, setSelected] = useState(false);
   const [isSelected2, setSelected2] = useState(false);
   const onPressLogin = () => {
-    if (isSelected == true || isSelected2 == true) {
-      alert("¡La!");
-    } else if (isSelected == false || isSelected2 !== false) {
+    
+    if  (isSelected == false && isSelected2 !== false) {
       alert("Estas aceptando continuar sin casco");
-    } else if (isSelected !== false || isSelected2 == false) {
+    } else if (isSelected !== false && isSelected2 == false) {
       alert("Estas aceptando continuar sin guaya");
-    } else if (isSelected == false || isSelected2 == false) {
+    } else if (isSelected == false && isSelected2 == false) {
       alert("¡No puedes ingresar sin ningún requisito de seguridad!");
     }
+ 
+ 
   };
 
   return (
