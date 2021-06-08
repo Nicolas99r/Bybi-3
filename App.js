@@ -13,24 +13,32 @@ import LoginInst from "./screens/LoginInst/LoginInst";
 import EleccionUser from "./screens/EleccionUser/EleccionUser";
 
 //Pantallas iteración II
+import BienvenidoAdmin from "./screens/BienvenidoAdmin/BienvenidoAdmin";
+import LoginAdmin from "./screens/LoginAdmin/LoginAdmin";
 import InicioAdmin from "./screens/InicioAdmin/InicioAdmin";
 import EscanerQR from "./screens/EscanerQR/EscanerQR";
 import Requisitos from "./screens/Requisitos/Requisitos";
 import Loginvisitor from "./screens/Loginvisitor/Loginvisitor";
 const Stack = createStackNavigator();
 
-//Funcion que almacena las pantallas
+//Funcion que almacena las pantallas     <Stack.Screen name="EleccionEntrada" component={EleccionEntrada} />
 function MyStack() {
   return (
     <Stack.Navigator>
+<<<<<<< Updated upstream
       <Stack.Screen name="Requisitos" component={Requisitos} />
+=======
+      
+       <Stack.Screen name="BienvenidoAdmin" component={BienvenidoAdmin} />
+       <Stack.Screen name="LoginAdmin" component={LoginAdmin} />
+>>>>>>> Stashed changes
       <Stack.Screen name="InicioAdmin" component={InicioAdmin} />
       <Stack.Screen name="EscanerQR" component={EscanerQR} />
       <Stack.Screen name="EntradaInst" component={EntradaInst} />
       <Stack.Screen name="Loginvisitor" component={Loginvisitor} />
       <Stack.Screen name="Loginscreen" component={Loginscreen} />
       <Stack.Screen name="codigoQr" component={codigoQr} />
-      <Stack.Screen name="EleccionEntrada" component={EleccionEntrada} />
+   
       <Stack.Screen name="EleccionUser" component={EleccionUser} />
       <Stack.Screen name="LoginInst" component={LoginInst} />
       <Stack.Screen name="Createuserscreen" component={Createuserscreen} />
@@ -47,3 +55,7 @@ export default function App() {
     </NavigationContainer>
   );
 }
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes

@@ -43,6 +43,7 @@ function Requisitos(props) {
         <Text style={styles.already}>Requisitos de seguridad </Text>
       </TouchableOpacity>
 
+<<<<<<< Updated upstream
       <View style={styles.c1}>
         <View style={styles.contenedorcasco}>
           <Image
@@ -61,6 +62,24 @@ function Requisitos(props) {
                 checked={isSelected}
                 onPress={() => setSelected(!isSelected)}
               />
+=======
+      <View style={styles.contenedor}>
+        <Image
+          style={styles.casco}
+          source={require("../../assets/casco.png")}
+        />
+        <View style={styles.checkboxcontainer}>
+          <View>
+            <CheckBox
+              style={styles.checkbox}
+              title="Casco"
+              checkedIcon="check"
+              uncheckedIcon="square-o"
+              checkedColor="green"
+              checked={isSelected}
+              onPress={() => setSelected(!isSelected)}
+            />
+>>>>>>> Stashed changes
             
           </View>
       </View>

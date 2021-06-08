@@ -35,6 +35,7 @@ function LoginInst(props) {
           style={styles.inputs}
           placeholder="Contraseña"
           value={pass}
+          secureTextEntry={true}
           onChange={(e) => setPass(e.nativeEvent.text)}
         />
       </View>
